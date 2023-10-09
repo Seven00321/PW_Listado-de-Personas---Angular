@@ -1,28 +1,15 @@
-<div class="container">
-    <div class="col">
-        <h2>{{titulo}}</h2>
-    </div>
+<div class="box" id="heading">
+    <h1>{{titulo}}</h1>
+</div>
 
-    <hr />
 
-    <!-- Formulario -->
-    <app-formulario
-        (personaCreada)="personaAgregada($event)"
-    > 
-    </app-formulario>
+<!--<app-personas></app-personas>-->
+<router-outlet></router-outlet>
 
-    <hr/>
 
-    <!-- Persona -->
-    <app-persona 
-        *ngFor="let personaElemento of personas; let i = index" 
-        [persona]="personaElemento" 
-        [indice]="i">
-    
-    </app-persona>
-    
+
         
     
-</div>
+
 
 

@@ -1,0 +1,17 @@
+<div class="box">
+    <!-- Persona -->
+    <app-persona 
+        *ngFor="let personaElemento of personas; let i = index" 
+        [persona]="personaElemento" 
+        [indice]="i">
+    
+    </app-persona>
+</div>  
+
+<div class="box">
+    <!-- Formulario -->
+    <app-formulario> 
+    </app-formulario>
+
+    <hr/>
+</div>
